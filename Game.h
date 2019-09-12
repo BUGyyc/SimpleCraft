@@ -5,13 +5,13 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include "game_level.h"
-
+//游戏状态
 enum GameState {
 	GAME_ACTIVE,
 	GAME_MENU,
 	GAME_WIN
 };
-
+//方向
 enum Direction {
 	UP,
 	RIGHT,
@@ -28,23 +28,21 @@ const GLfloat BALL_RADIUS = 12.5f;
 class Game
 {
 public:
-	// Game state
 	GameState              State;
 	GLboolean              Keys[1024];
 	GLuint                 Width, Height;
 	std::vector<GameLevel> Levels;
 	GLuint                 Level;
-	// Constructor/Destructor
 	Game(GLuint width, GLuint height);
 	~Game();
-	// Initialize game state (load all shaders/textures/levels)
+	//初始化
 	void Init();
-	// GameLoop
+	//游戏内的循环
 	void ProcessInput(GLfloat dt);
 	void Update(GLfloat dt);
 	void Render();
 	void DoCollisions();
-	// Reset
+	//重置逻辑
 	void ResetLevel();
 	void ResetPlayer();
 };
