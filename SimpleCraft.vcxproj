@@ -116,6 +116,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ball_object.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="game_level.cpp" />
     <ClCompile Include="game_object.cpp" />
@@ -126,6 +127,7 @@
     <ClCompile Include="Texture2D.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ball_object.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="game_level.h" />
     <ClInclude Include="game_object.h" />

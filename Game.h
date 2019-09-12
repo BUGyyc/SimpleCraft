@@ -14,6 +14,7 @@
 #include <GLFW/glfw3.h>
 
 #include "game_level.h"
+#include "game_object.h"
 
 // Represents the current state of the game
 enum GameState {
@@ -48,6 +49,10 @@ public:
 	void ProcessInput(GLfloat dt);
 	void Update(GLfloat dt);
 	void Render();
+
+	void DoCollisions();
+
+	GLboolean CheckCollision(GameObject &one, GameObject &two);
 };
 
 #endif

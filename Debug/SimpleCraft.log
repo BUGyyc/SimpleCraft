@@ -1,44 +1,7 @@
 ﻿  Game.cpp
-  正在生成代码...
-  正在编译...
-  SimpleCraft.cpp
-e:\github\openglstudy\project\simplecraft\simplecraft\simplecraft\simplecraft.cpp(54): warning C4244: “初始化”: 从“double”转换到“GLfloat”，可能丢失数据
-  正在生成代码...
-LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
-LINK : warning LNK4098: 默认库“LIBCMT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
-rescouce_manager.obj : warning LNK4049: 已导入本地定义的符号 ___glewDeleteProgram
-Shader.obj : warning LNK4049: 已导入本地定义的符号 ___glewAttachShader
-Shader.obj : warning LNK4049: 已导入本地定义的符号 ___glewCompileShader
-Shader.obj : warning LNK4049: 已导入本地定义的符号 ___glewCreateProgram
-Shader.obj : warning LNK4049: 已导入本地定义的符号 ___glewCreateShader
-Shader.obj : warning LNK4049: 已导入本地定义的符号 ___glewDeleteShader
-Shader.obj : warning LNK4049: 已导入本地定义的符号 ___glewGetProgramInfoLog
-Shader.obj : warning LNK4049: 已导入本地定义的符号 ___glewGetProgramiv
-Shader.obj : warning LNK4049: 已导入本地定义的符号 ___glewGetShaderInfoLog
-Shader.obj : warning LNK4049: 已导入本地定义的符号 ___glewGetShaderiv
-Shader.obj : warning LNK4049: 已导入本地定义的符号 ___glewGetUniformLocation
-Shader.obj : warning LNK4049: 已导入本地定义的符号 ___glewLinkProgram
-Shader.obj : warning LNK4049: 已导入本地定义的符号 ___glewShaderSource
-Shader.obj : warning LNK4049: 已导入本地定义的符号 ___glewUniform1f
-Shader.obj : warning LNK4049: 已导入本地定义的符号 ___glewUniform1i
-Shader.obj : warning LNK4049: 已导入本地定义的符号 ___glewUniform2f
-Shader.obj : warning LNK4049: 已导入本地定义的符号 ___glewUniform3f
-Shader.obj : warning LNK4049: 已导入本地定义的符号 ___glewUniform4f
-Shader.obj : warning LNK4049: 已导入本地定义的符号 ___glewUniformMatrix4fv
-Shader.obj : warning LNK4049: 已导入本地定义的符号 ___glewUseProgram
-sprite_randerer.obj : warning LNK4049: 已导入本地定义的符号 ___glewActiveTexture
-sprite_randerer.obj : warning LNK4049: 已导入本地定义的符号 ___glewBindBuffer
-sprite_randerer.obj : warning LNK4049: 已导入本地定义的符号 ___glewBufferData
-sprite_randerer.obj : warning LNK4049: 已导入本地定义的符号 ___glewGenBuffers
-sprite_randerer.obj : warning LNK4049: 已导入本地定义的符号 ___glewEnableVertexAttribArray
-sprite_randerer.obj : warning LNK4049: 已导入本地定义的符号 ___glewVertexAttribPointer
-sprite_randerer.obj : warning LNK4049: 已导入本地定义的符号 ___glewBindVertexArray
-sprite_randerer.obj : warning LNK4049: 已导入本地定义的符号 ___glewDeleteVertexArrays
-sprite_randerer.obj : warning LNK4049: 已导入本地定义的符号 ___glewGenVertexArrays
-SOIL.lib(image_DXT.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“SOIL.lib(image_DXT.obj)”或在“E:\github\OpenGLStudy\project\SimpleCraft\SimpleCraft\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-SOIL.lib(image_helper.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“SOIL.lib(image_helper.obj)”或在“E:\github\OpenGLStudy\project\SimpleCraft\SimpleCraft\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-SOIL.lib(SOIL.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“SOIL.lib(SOIL.obj)”或在“E:\github\OpenGLStudy\project\SimpleCraft\SimpleCraft\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-SOIL.lib(stb_image_aug.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“SOIL.lib(stb_image_aug.obj)”或在“E:\github\OpenGLStudy\project\SimpleCraft\SimpleCraft\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-glew32s.lib(glew.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“glew32s.lib(glew.obj)”或在“E:\github\OpenGLStudy\project\SimpleCraft\SimpleCraft\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+e:\github\openglstudy\project\simplecraft\simplecraft\simplecraft\game.cpp(51): warning C4244: “参数”: 从“double”转换到“GLuint”，可能丢失数据
+e:\github\openglstudy\project\simplecraft\simplecraft\simplecraft\game.cpp(52): warning C4244: “参数”: 从“double”转换到“GLuint”，可能丢失数据
+e:\github\openglstudy\project\simplecraft\simplecraft\simplecraft\game.cpp(53): warning C4244: “参数”: 从“double”转换到“GLuint”，可能丢失数据
+e:\github\openglstudy\project\simplecraft\simplecraft\simplecraft\game.cpp(54): warning C4244: “参数”: 从“double”转换到“GLuint”，可能丢失数据
   SimpleCraft.vcxproj -> E:\github\OpenGLStudy\project\SimpleCraft\SimpleCraft\Debug\SimpleCraft.exe
   SimpleCraft.vcxproj -> E:\github\OpenGLStudy\project\SimpleCraft\SimpleCraft\Debug\SimpleCraft.pdb (Partial PDB)
