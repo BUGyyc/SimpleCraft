@@ -3,12 +3,22 @@
 #include "sprite_renderer.h"
 #include "game_object.h"
 #include "ball_object.h"
+#include <queue>
+#include <iostream>
+#include "quad_tree.h"
+
+using namespace std;
+
 //整个游戏的精灵渲染
 SpriteRenderer  *Renderer;
 //玩家操作的长方形木板
 GameObject      *Player;
 //游戏中碰撞的球
 BallObject      *Ball;
+
+//QuadTreeNode<GameObject> *quadTree;
+QuadTree<GameObject*>* quadTree;
+
 Game::Game(GLuint width, GLuint height)
 	: State(GAME_ACTIVE), Keys(), Width(width), Height(height)
 {
@@ -18,6 +28,7 @@ Game::~Game()
 	delete Renderer;
 	delete Player;
 	delete Ball;
+	//delete quadTree;
 }
 //初始化一些资源，包括贴图、着色器、关卡信息
 void Game::Init()
@@ -54,10 +65,15 @@ void Game::Init()
 	glm::vec2 ballPos = playerPos + glm::vec2(PLAYER_SIZE.x / 2 - BALL_RADIUS, -BALL_RADIUS * 2);
 	//设置球的位置和尺寸
 	Ball = new BallObject(ballPos, BALL_RADIUS, INITIAL_BALL_VELOCITY, ResourceManager::GetTexture("face"));
+
+	//quadTree = new QuadTreeNode<GameObject>(0, 0, 800, 600, 1, 3, ROOT, nullptr);
+
+	quadTree = new QuadTree<GameObject*>();
 }
 //每帧调用，更新的内容
 void Game::Update(GLfloat dt)
 {
+	this->QuadTreeExcute();
 	//球移动
 	Ball->Move(dt, this->Width);
 	//检测球的碰撞
@@ -135,25 +151,40 @@ void Game::ResetPlayer()
 	Ball->Reset(Player->Position + glm::vec2(PLAYER_SIZE.x / 2 - BALL_RADIUS, -(BALL_RADIUS * 2)), INITIAL_BALL_VELOCITY);
 }
 
+void Game::QuadTreeExcute() 
+{
+	quadTree = new QuadTree<GameObject*>();
+	for (GameObject &box : this->Levels[this->Level].Bricks) {
+		quadTree->add(&box,QuadAABB(box.Position.x,box.Position.y,80,80));
+	}
+	//把球也放入
+	//quadTree->add(Ball, QuadAABB(Ball->Position.x, Ball->Position.y, 80, 80));
+}
+
 Collision CheckCollision(BallObject &one, GameObject &two);
 Direction VectorDirection(glm::vec2 closest);
 //执行碰撞
 void Game::DoCollisions()
 {	
-	//遍历所有的方块与球的碰撞情况
-	for (GameObject &box : this->Levels[this->Level].Bricks)
+	vector<GameObject*> list;
+	quadTree->find(QuadAABB(Ball->Position.x,Ball->Position.y,80,80), list, true); //精确
+	if (list.size() > 0) {
+		cout << list.size() << " size   " << endl;
+	}
+	//遍历区域内的方块与球的碰撞情况
+	for (auto &box : list)
 	{
 		//只有方块存在才检测
-		if (!box.Destroyed)
+		if (!((*box).Destroyed))
 		{
 			//检测是否有碰撞
-			Collision collision = CheckCollision(*Ball, box);
+			Collision collision = CheckCollision(*Ball, *box);
 			//有碰撞
 			if (std::get<0>(collision))
 			{
 				//销毁普通的方块
-				if (!box.IsSolid)
-					box.Destroyed = GL_TRUE;
+				if (!(*box).IsSolid)
+					(*box).Destroyed = GL_TRUE;
 				//方向
 				Direction dir = std::get<1>(collision);
 				glm::vec2 diff_vector = std::get<2>(collision);

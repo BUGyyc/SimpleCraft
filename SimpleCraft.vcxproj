@@ -131,6 +131,7 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="game_level.h" />
     <ClInclude Include="game_object.h" />
+    <ClInclude Include="quad_tree.h" />
     <ClInclude Include="resource_manager.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="sprite_renderer.h" />

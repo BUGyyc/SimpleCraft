@@ -68,6 +68,9 @@
     <ClInclude Include="ball_object.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="quad_tree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />

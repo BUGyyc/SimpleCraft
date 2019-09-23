@@ -1,11 +1,13 @@
 ﻿  Game.cpp
-e:\github\openglstudy\project\simplecraft\simplecraft\simplecraft\game.cpp(45): warning C4244: “参数”: 从“double”转换到“GLuint”，可能丢失数据
-e:\github\openglstudy\project\simplecraft\simplecraft\simplecraft\game.cpp(46): warning C4244: “参数”: 从“double”转换到“GLuint”，可能丢失数据
-e:\github\openglstudy\project\simplecraft\simplecraft\simplecraft\game.cpp(47): warning C4244: “参数”: 从“double”转换到“GLuint”，可能丢失数据
-e:\github\openglstudy\project\simplecraft\simplecraft\simplecraft\game.cpp(48): warning C4244: “参数”: 从“double”转换到“GLuint”，可能丢失数据
-e:\github\openglstudy\project\simplecraft\simplecraft\simplecraft\game.cpp(128): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
-e:\github\openglstudy\project\simplecraft\simplecraft\simplecraft\game.cpp(130): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
-e:\github\openglstudy\project\simplecraft\simplecraft\simplecraft\game.cpp(132): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
-e:\github\openglstudy\project\simplecraft\simplecraft\simplecraft\game.cpp(134): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
+e:\github\openglstudy\project\simplecraft\simplecraft\simplecraft\game.cpp(50): warning C4244: “参数”: 从“double”转换到“GLuint”，可能丢失数据
+e:\github\openglstudy\project\simplecraft\simplecraft\simplecraft\game.cpp(51): warning C4244: “参数”: 从“double”转换到“GLuint”，可能丢失数据
+e:\github\openglstudy\project\simplecraft\simplecraft\simplecraft\game.cpp(52): warning C4244: “参数”: 从“double”转换到“GLuint”，可能丢失数据
+e:\github\openglstudy\project\simplecraft\simplecraft\simplecraft\game.cpp(53): warning C4244: “参数”: 从“double”转换到“GLuint”，可能丢失数据
+e:\github\openglstudy\project\simplecraft\simplecraft\simplecraft\game.cpp(138): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
+e:\github\openglstudy\project\simplecraft\simplecraft\simplecraft\game.cpp(140): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
+e:\github\openglstudy\project\simplecraft\simplecraft\simplecraft\game.cpp(142): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
+e:\github\openglstudy\project\simplecraft\simplecraft\simplecraft\game.cpp(144): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
+e:\github\openglstudy\project\simplecraft\simplecraft\simplecraft\game.cpp(165): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+e:\github\openglstudy\project\simplecraft\simplecraft\simplecraft\game.cpp(185): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
   SimpleCraft.vcxproj -> E:\github\OpenGLStudy\project\SimpleCraft\SimpleCraft\Debug\SimpleCraft.exe
   SimpleCraft.vcxproj -> E:\github\OpenGLStudy\project\SimpleCraft\SimpleCraft\Debug\SimpleCraft.pdb (Partial PDB)

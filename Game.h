@@ -5,6 +5,7 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include "game_level.h"
+#include <list>
 //ÓÎÏ·×´Ì¬
 enum GameState {
 	GAME_ACTIVE,
@@ -42,6 +43,8 @@ public:
 	void Update(GLfloat dt);
 	void Render();
 	void DoCollisions();
+
+	void QuadTreeExcute();
 	//ÖØÖÃÂß¼­
 	void ResetLevel();
 	void ResetPlayer();
