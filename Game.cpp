@@ -157,8 +157,6 @@ void Game::QuadTreeExcute()
 	for (GameObject &box : this->Levels[this->Level].Bricks) {
 		quadTree->add(&box,QuadAABB(box.Position.x,box.Position.y,80,80));
 	}
-	//把球也放入
-	//quadTree->add(Ball, QuadAABB(Ball->Position.x, Ball->Position.y, 80, 80));
 }
 
 Collision CheckCollision(BallObject &one, GameObject &two);
